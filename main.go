@@ -24,9 +24,7 @@ func main() {
     http.HandleFunc("/hello", hello)
     http.HandleFunc("/headers", headers)
 
+
+    fmt.Println("server running on 8090")
     http.ListenAndServe(":8090", nil)
-    fmt.Printf("server running on %d\n", 8090)
-
-
-
 }
